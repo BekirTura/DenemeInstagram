@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170DF16E1F0A236B00FEDAAD /* SignInControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DF16D1F0A236B00FEDAAD /* SignInControllerViewController.swift */; };
+		170DF1701F0A238300FEDAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DF16F1F0A238300FEDAAD /* SignUpViewController.swift */; };
 		ED081929E6A814D02E91DEA7 /* Pods_DenemeInstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6509E40575DE0CE4D2449085 /* Pods_DenemeInstagram.framework */; };
 		F48D05691EE5357700210F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D05681EE5357700210F2F /* AppDelegate.swift */; };
 		F48D056B1EE5357700210F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D056A1EE5357700210F2F /* ViewController.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		170DF16D1F0A236B00FEDAAD /* SignInControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInControllerViewController.swift; sourceTree = "<group>"; };
+		170DF16F1F0A238300FEDAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1AD7DD80A019755524058519 /* Pods-DenemeInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DenemeInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DenemeInstagram/Pods-DenemeInstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		6509E40575DE0CE4D2449085 /* Pods_DenemeInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DenemeInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2A85342349B47661DD7850 /* Pods-DenemeInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DenemeInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-DenemeInstagram/Pods-DenemeInstagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				F48D056F1EE5357700210F2F /* Assets.xcassets */,
 				F48D05711EE5357700210F2F /* LaunchScreen.storyboard */,
 				F48D05741EE5357700210F2F /* Info.plist */,
+				170DF16D1F0A236B00FEDAAD /* SignInControllerViewController.swift */,
+				170DF16F1F0A238300FEDAAD /* SignUpViewController.swift */,
 			);
 			path = DenemeInstagram;
 			sourceTree = "<group>";
@@ -391,6 +397,8 @@
 			files = (
 				F48D056B1EE5357700210F2F /* ViewController.swift in Sources */,
 				F48D05691EE5357700210F2F /* AppDelegate.swift in Sources */,
+				170DF1701F0A238300FEDAAD /* SignUpViewController.swift in Sources */,
+				170DF16E1F0A236B00FEDAAD /* SignInControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
