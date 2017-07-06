@@ -77,6 +77,9 @@
                                 <rect key="frame" x="32" y="264" width="131" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <segue destination="QgL-X9-wJm" kind="modal" id="G8y-Fv-TD3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwr-ZR-XAU">
                                 <rect key="frame" x="32" y="302" width="58" height="30"/>
@@ -103,6 +106,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7Q-zG-kY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="111.99400299850076"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="Kkd-Tv-rt1">
+            <objects>
+                <viewController id="QgL-X9-wJm" customClass="ResetPasswordViewController" customModule="DenemeInstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xAe-Ck-94E"/>
+                        <viewControllerLayoutGuide type="bottom" id="108-FA-Jrh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MkM-Hb-WN2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sb5-ov-P8Z">
+                                <rect key="frame" x="16" y="68" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiO-CB-U5M">
+                                <rect key="frame" x="16" y="106" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32957771660000001" green="0.4390477472" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtn_click:" destination="QgL-X9-wJm" eventType="touchUpInside" id="kFl-ts-BzC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeZ-e8-Psa">
+                                <rect key="frame" x="295" y="106" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtn_Click:" destination="QgL-X9-wJm" eventType="touchUpInside" id="1ER-Nm-OVp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="Sb5-ov-P8Z" id="BYR-rB-yhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJO-CR-bDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="914"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Nh0-EB-YtU">
@@ -215,6 +270,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qek-4T-V0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1469.5999999999999" y="111.99400299850076"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="vYd-3e-VbM">
+            <objects>
+                <viewController id="uPe-xI-moT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EAz-Vq-88p"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gez-ks-v2N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qqj-ww-CZz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="zZo-Jw-Q4f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTf-jM-PZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823" y="-134"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vXg-gI-VE4">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" id="8XI-dg-d8N" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WsK-FM-rsi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uPe-xI-moT" kind="relationship" relationship="viewControllers" id="bEj-ZG-mrf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNY-uG-YMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="112"/>
         </scene>
     </scenes>
     <resources>

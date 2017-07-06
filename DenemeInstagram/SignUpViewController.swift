@@ -131,6 +131,13 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate ,
             user["avatar"] = avaFile
             user.signUpInBackground(block: { (success, error) in
                 if(success){
+                    UserDefaults.standard.set(user.username, forKey: "username")
+                    //UserDefaults.standard.set(user.password, forKey: "password")
+                    UserDefaults.standard.synchronize()
+                    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.login()
+                    
+                    
                     print("registered")
                 }else {
                     print(error?.localizedDescription)
